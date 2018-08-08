@@ -16,6 +16,6 @@ function removeSocialNetworkingCrap() {
     }
 };
 
-document.ready(function() {
+$(document).ready(function() {
   removeSocialNetworkingCrap();
 });
