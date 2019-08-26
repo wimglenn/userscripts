@@ -1,16 +1,7 @@
+# How to install the userscripts?
+
 Get tampermonkey if you don't already have it installed:  https://tampermonkey.net
 
-**1. Click icon in top right corner to navigate to the tampermonkey "Dashboard":**
+Open the raw .js link directly or through github UI, e.g. navigate to https://github.com/wimglenn/userscripts/blob/master/stackoverflow.com/social-notworking.user.js and click the "Raw" button, or go directly to https://raw.githubusercontent.com/wimglenn/userscripts/master/stackoverflow.com/social-notworking.user.js
 
-![dashboard](https://i.stack.imgur.com/8YPSm.png)
-
-
-**2. Click the "Utilities" tab:**
-
-![utils](https://i.stack.imgur.com/Fzqxz.png)
-
-
-**3. Add the raw .js link e.g. https://raw.githubusercontent.com/wimglenn/userscripts/master/stackoverflow.com/social-notworking.js into the URL textbox and click the "Import" button.**
-
-![import](https://i.stack.imgur.com/3lmcf.png)
-
+A tampermonkey dialog should appear for you to import/install the script.
