@@ -14,7 +14,7 @@ To get this:
 
 _Note: the extra column is only available when the ``[Ordering]`` mode is using ``?order=stars``._
 
-If you like it, please **[⬆  upvote this craft submission here](https://www.reddit.com/r/adventofcode/comments/...)**.
+If you like it, please **[⬆  upvote this craft submission here](https://www.reddit.com/r/adventofcode/comments/k4emxn/advent_of_code_2020_craft_submissions_megathread/ggkfez4?utm_source=share&utm_medium=web2x&context=3)**.
 
 ## My other AoC stuff:
 
