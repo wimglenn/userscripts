@@ -13,6 +13,7 @@
 
 (function() {
     'use strict'
+
     function hide() {
         var things = document.getElementsByClassName("todo-no-class-here")
         var count = 0
@@ -29,9 +30,9 @@
         }
     }
     hide()
-    const observer = new MutationObserver(() => hide());
+    const observer = new MutationObserver(() => hide())
     observer.observe(document.body, {
         childList: true,
-        subtree: true,
+        subtree: true
     })
 })()
