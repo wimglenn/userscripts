@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name         Advent Of Code Leaderboard Star Timestamps
-// @namespace    https://github.com/wimglenn/userscripts/
-// @version      0.3
-// @description  Adds a column for time of last star on private leaderboards when order=stars
-// @author       Wim Glenn
-// @include      https://adventofcode.com/*/leaderboard/private/view/*order=stars
-// @grant        none
+// @name           Advent Of Code Leaderboard Star Timestamps
+// @namespace      https://github.com/wimglenn/userscripts/
+// @version        0.3
+// @description    Adds a column for time of last star on private leaderboards when order=stars
+// @author         Wim Jeantine-Glenn
+// @include        https://adventofcode.com/*/leaderboard/private/view/*order=stars
+// @grant          none
+// @@updateURL     https://github.com/wimglenn/userscripts/raw/refs/heads/main/adventofcode.com/leaderboard-star-ts.user.js
+// @@downloaodURL  https://github.com/wimglenn/userscripts/raw/refs/heads/main/adventofcode.com/leaderboard-star-ts.user.js
 // ==/UserScript==
 
 (function() {
