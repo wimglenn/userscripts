@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Advent Of Code Leaderboard Star Timestamps
 // @namespace      https://github.com/wimglenn/userscripts/
-// @version        0.6
+// @version        0.7
 // @description    Adds a column for time of last star on private leaderboards when order=stars
 // @author         Wim Jeantine-Glenn
 // @include        https://adventofcode.com/*/leaderboard/private/view/*order=stars
@@ -46,11 +46,11 @@
         var newSpan = document.createElement('span')
         var lastStarTime = starCounts[i].title.split(" ").pop()
         newSpan.innerHTML = lastStarTime.padStart(w - 1, " ") + " "
-        if (currentDayClass == "privboard-star-both") {
+        if (currentDayClass === "privboard-star-both") {
             // if they've solved the current day's puzzle, emphasize their time
             newSpan.innerHTML = "<em>" + newSpan.innerHTML + "</em>"
         }
-        else if (currentDayClass == "privboard-star-firstonly") {
+        else if (currentDayClass === "privboard-star-firstonly") {
             // if they've solved the first part only, emphasize less strongly
             newSpan.setAttribute("class", "privboard-star-firstonly")
         }
