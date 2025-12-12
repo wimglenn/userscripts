@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name           Advent Of Code Leaderboard Star Timestamps
 // @namespace      https://github.com/wimglenn/userscripts/
-// @version        0.8
+// @version        0.9
 // @description    Adds a column for time of last star on private leaderboards when order=stars
 // @author         Wim Jeantine-Glenn
-// @include        https://adventofcode.com/*/leaderboard/private/view/*order=stars*
+// @include        https://adventofcode.com/*/leaderboard/private/view/*order=stars
 // @grant          none
 // @updateURL      https://github.com/wimglenn/userscripts/raw/refs/heads/main/adventofcode.com/leaderboard-star-ts.user.js
 // @downloadURL    https://github.com/wimglenn/userscripts/raw/refs/heads/main/adventofcode.com/leaderboard-star-ts.user.js
@@ -20,9 +20,11 @@
     dayPad.innerHTML = " ".repeat(w)
     header.parentNode.insertBefore(dayPad, header)
 
+    var year = parseInt(document.URL.match("adventofcode.com/[0-9]{4}/")[0].slice(17, 21))
+    var limit = year >= 2025 ? 12 : 25
     // figure out the most recently unlocked day
     var privboardDays = document.getElementsByClassName("privboard-days")[0]
-    for (var i = 0; i < 25; ++i) {
+    for (var i = 0; i < limit; ++i) {
         var link = privboardDays.children[i].href
         if ( !link ) {
             break
