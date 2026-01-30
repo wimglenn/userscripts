@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         Hide Hint Button
 // @namespace    https://github.com/wimglenn/userscripts/
-// @version      0.1
+// @version      0.2
 // @description  Hides the "Hint" button
-// @match        chess.com*
+// @include      https://www.chess.com/puzzles/rated
 // @grant        none
+// @updateURL    https://github.com/wimglenn/userscripts/raw/refs/heads/main/chess.com/no-hints.user.js
+// @downloadURL  https://github.com/wimglenn/userscripts/raw/refs/heads/main/chess.com/no-hints.user.js
 // ==/UserScript==
 
 (function () {
