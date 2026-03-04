@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide Hint Button 2
 // @namespace    https://github.com/wimglenn/userscripts/
-// @version      0.2
+// @version      0.3
 // @description  Hides the "Hint" button 2
 // @include      https://www.chess.com/puzzles/rated
 // @include      https://www.chess.com/daily
@@ -12,22 +12,12 @@
 // ==/UserScript==
 
 (function () {
-  const addStyle = () => {
-    if (!document.getElementById('hide-hint-style')) {
-      const style = document.createElement('style');
-      style.id = 'hide-hint-style';
-      style.textContent = `
-        button[data-cy="hint-move-button"] {
-          display: none !important;
-        }
-      `;
-      document.documentElement.appendChild(style);
+  const style = document.createElement('style');
+  style.textContent = `
+    button[data-cy="hint-move-button"],
+    button:has(svg[data-glyph="device-bulb-glow"]) {
+      display: none !important;
     }
-  };
-
-  addStyle();
-  new MutationObserver(addStyle).observe(document.documentElement, {
-    childList: true,
-    subtree: true
-  });
+  `;
+  document.documentElement.appendChild(style);
 })();
